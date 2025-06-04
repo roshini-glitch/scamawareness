@@ -5,6 +5,212 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Impersonation Scam - Scam Awareness SG</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Additional styles for enhanced impersonation scam page */
+    .scam-header {
+      background: linear-gradient(135deg, #ff6b6b, #ee5a52);
+      color: white;
+      padding: 2rem;
+      border-radius: 10px;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    .scam-header h1 {
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+      color: white;
+    }
+
+    .scam-header p {
+      font-size: 1.1rem;
+      opacity: 0.95;
+      line-height: 1.6;
+    }
+
+    .red-flag {
+      background: #fff3cd;
+      border: 1px solid #ffeaa7;
+      padding: 1.2rem;
+      border-radius: 8px;
+      margin: 2rem 0;
+      border-left: 4px solid #fdcb6e;
+    }
+
+    .red-flag strong {
+      color: #e17055;
+      font-weight: 700;
+    }
+
+    .tactics-section {
+      margin: 2.5rem 0;
+    }
+
+    .tactics-section h2 {
+      color: #2d3436;
+      margin-bottom: 1.5rem;
+      font-size: 1.8rem;
+    }
+
+    .tactics-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin: 1.5rem 0;
+    }
+
+    .tactic-card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      border-left: 4px solid #e74c3c;
+      transition: transform 0.3s ease;
+    }
+
+    .tactic-card:hover {
+      transform: translateY(-2px);
+    }
+
+    .tactic-card h3 {
+      color: #e74c3c;
+      margin-bottom: 0.8rem;
+      font-size: 1.2rem;
+    }
+
+    .tactic-card p {
+      color: #555;
+      line-height: 1.5;
+    }
+
+    .protection-section {
+      background: #e8f5e8;
+      padding: 2rem;
+      border-radius: 10px;
+      margin: 2.5rem 0;
+    }
+
+    .protection-section h2 {
+      color: #27ae60;
+      margin-bottom: 1.5rem;
+      text-align: center;
+      font-size: 1.8rem;
+    }
+
+    .defense-tips {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.2rem;
+      margin: 1.5rem 0;
+    }
+
+    .tip-card {
+      background: white;
+      padding: 1.2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .tip-card:hover {
+      transform: translateY(-2px);
+    }
+
+    .tip-icon {
+      font-size: 2.2rem;
+      margin-bottom: 0.8rem;
+      display: block;
+    }
+
+    .tip-card h4 {
+      color: #27ae60;
+      margin-bottom: 0.5rem;
+      font-size: 1.1rem;
+    }
+
+    .tip-card p {
+      color: #666;
+      font-size: 0.95rem;
+      line-height: 1.4;
+    }
+
+    .real-example {
+      background: #fde2e2;
+      padding: 1.8rem;
+      border-radius: 10px;
+      margin: 2.5rem 0;
+      border-left: 4px solid #e74c3c;
+    }
+
+    .real-example h3 {
+      color: #c53030;
+      margin-bottom: 1rem;
+      font-size: 1.3rem;
+    }
+
+    .got-scammed {
+      background: linear-gradient(135deg, #00b894, #00a085);
+      color: white;
+      padding: 2rem;
+      border-radius: 10px;
+      text-align: center;
+      margin: 2.5rem 0;
+    }
+
+    .got-scammed h2 {
+      margin-bottom: 1rem;
+      color: white;
+      font-size: 1.6rem;
+    }
+
+    .got-scammed p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    .info-section {
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      margin: 2rem 0;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+      border: 1px solid #e1e8ed;
+    }
+
+    .info-section h2 {
+      color: #2d3436;
+      margin-bottom: 1.5rem;
+      border-bottom: 3px solid #74b9ff;
+      padding-bottom: 0.5rem;
+      font-size: 1.6rem;
+    }
+
+    .info-section ul {
+      margin: 1rem 0;
+      padding-left: 1.8rem;
+    }
+
+    .info-section li {
+      margin-bottom: 0.8rem;
+      line-height: 1.5;
+      color: #555;
+    }
+
+    @media (max-width: 768px) {
+      .scam-header h1 {
+        font-size: 1.8rem;
+      }
+      
+      .tactics-grid, .defense-tips {
+        grid-template-columns: 1fr;
+      }
+      
+      .tip-icon {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -20,28 +226,97 @@
   </header>
 
   <main class="container">
-    <h1>Impersonation Scam hello helloAarthi</h1>
-    <p>
-      Impersonation scams involve scammers pretending to be someone trustworthy, such as government officers or bank officials, 
-      to trick victims into giving money or personal information.
-    </p>
-    <h2>How It Works</h2>
-    <ul>
-      <li>Scammers call victims claiming to be from the police or bank.</li>
-      <li>They create fake urgency, warning victims of crimes or fraud.</li>
-      <li>Victims are asked to transfer money or provide banking details.</li>
-    </ul>
-    <h2>How to Avoid</h2>
-    <ul>
-      <li>Do not disclose personal or bank details over the phone.</li>
-      <li>Verify caller identity independently by calling official numbers.</li>
-      <li>Be suspicious of urgent demands for money transfers.</li>
-    </ul>
-    <h3>Real Story:</h3>
-    <p>
-      A 45-year-old professional lost $50,000 after scammers impersonated police officers, claiming his identity was stolen. 
-      Always verify suspicious calls independently.
-    </p>
+    <div class="scam-header">
+      <h1>🚨 What's an Impersonation Scam?</h1>
+      <p>Someone calls, texts, or emails pretending to be someone you trust. Could be the police, your bank, even your own family. Their goal? Get your money or personal info by making you panic.</p>
+    </div>
+
+    <div class="red-flag">
+      <strong>Red Flag:</strong> They always want you to act RIGHT NOW. Don't fall for the pressure!
+    </div>
+
+    <div class="tactics-section">
+      <h2>😈 Common Scammer Tactics</h2>
+      <div class="tactics-grid">
+        <div class="tactic-card">
+          <h3>Fake Police Call</h3>
+          <p>"You're under investigation. Transfer money to clear your name."</p>
+        </div>
+        <div class="tactic-card">
+          <h3>Government Agency</h3>
+          <p>Pretending to be from MOM, ICA, or other official bodies.</p>
+        </div>
+        <div class="tactic-card">
+          <h3>Bank "Verification"</h3>
+          <p>"We need to verify suspicious transactions on your account."</p>
+        </div>
+        <div class="tactic-card">
+          <h3>Hacked Friend</h3>
+          <p>Using your friend's social media to ask for emergency money.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="protection-section">
+      <h2>🛡️ How to Protect Yourself</h2>
+      
+      <h3 style="margin-bottom: 1rem; color: #2d3436; text-align: center;">Quick Defense Tips</h3>
+      <div class="defense-tips">
+        <div class="tip-card">
+          <span class="tip-icon">⏸️</span>
+          <h4>Pause & Think</h4>
+          <p>Don't let them rush you. Take time to verify.</p>
+        </div>
+        <div class="tip-card">
+          <span class="tip-icon">🚫</span>
+          <h4>Never Share</h4>
+          <p>No passwords, OTPs, or bank details over phone/email.</p>
+        </div>
+        <div class="tip-card">
+          <span class="tip-icon">📞</span>
+          <h4>Call Back</h4>
+          <p>Hang up and call the official number yourself.</p>
+        </div>
+        <div class="tip-card">
+          <span class="tip-icon">❌</span>
+          <h4>No Money Transfers</h4>
+          <p>Real authorities never ask you to transfer money.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="info-section">
+      <h2>How Impersonation Scams Work</h2>
+      <ul>
+        <li>Scammers call victims claiming to be from the police, bank, or government agencies</li>
+        <li>They create fake urgency, warning victims of crimes, fraud, or account issues</li>
+        <li>Victims are pressured to act immediately without time to think</li>
+        <li>They're asked to transfer money or provide banking details and passwords</li>
+        <li>Scammers may use spoofed numbers to appear legitimate</li>
+      </ul>
+    </div>
+
+    <div class="info-section">
+      <h2>How to Avoid Being Scammed</h2>
+      <ul>
+        <li>Never disclose personal information, bank details, or passwords over the phone</li>
+        <li>Always verify caller identity independently by calling official numbers</li>
+        <li>Be suspicious of urgent demands for money transfers or immediate action</li>
+        <li>Remember that real authorities will never ask you to transfer money</li>
+        <li>Take time to think - legitimate calls can wait</li>
+        <li>If in doubt, hang up and call back using official contact numbers</li>
+      </ul>
+    </div>
+
+    <div class="real-example">
+      <h3>✅ Real Example</h3>
+      <p>Sarah got a call from "police" saying her account was linked to money laundering. Scared, she transferred $10,000 to a "secure account" for investigation. It was all fake. Don't be Sarah.</p>
+    </div>
+
+    <div class="got-scammed">
+      <h2>🚨 Got Scammed?</h2>
+      <p>Report it immediately through ScamShield app or contact police. The faster you act, the better chance of getting help.</p>
+    </div>
   </main>
 
   <footer>
