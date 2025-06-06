@@ -10,26 +10,55 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #721111;
+      background-color: #f9f9f9;
       color: #000000;
     }
 
-    header, footer {
-      background-color: #000000;
-      color: #ffffff;
-      padding: 1em 0;
+    /* Updated header styles to match the image */
+    header {
+      background-color: #66aaff; /* Light blue */
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 10px 30px;
+    }
+
+    .logo-box {
+      background-color: #29b6f6; /* Bright blue background for the logo box */
+      padding: 10px;
+      margin-right: 20px;
+    }
+
+    .logo-box img {
+      width: 80px;
+      height: 80px;
+      display: block;
+    }
+
+    nav {
+      flex-grow: 1;
       text-align: center;
     }
 
     nav a {
-      color: #ff0000;
+      color: white;
       text-decoration: none;
-      margin: 0 15px;
+      margin: 0 20px;
       font-weight: bold;
+      font-size: 20px;
     }
 
     nav a:hover {
       text-decoration: underline;
+    }
+
+    .header-title {
+      color: black;
+      font-weight: bold;
+      font-size: 18px;
+      text-align: right;
     }
 
     main.container {
@@ -43,7 +72,7 @@
 
     h1 {
       text-align: center;
-      color: #cc0000;
+      color: #3b30d2;
     }
 
     form label {
@@ -76,7 +105,7 @@
     form input[type="submit"] {
       margin-top: 20px;
       padding: 12px 25px;
-      background-color: #cc0000;
+      background-color: #cb2222;
       color: #fff;
       border: none;
       border-radius: 5px;
@@ -87,20 +116,30 @@
     form input[type="submit"]:hover {
       background-color: #a00000;
     }
+
+    footer {
+      background-color: #000000;
+      color: #ffffff;
+      padding: 1em 0;
+      text-align: center;
+    }
   </style>
 </head>
 <body>
 
   <header>
-    <h2>Scam Awareness Singapore</h2>
+    <div class="logo-box">
+      <img src="SCAM AWARENESS.png" alt="Logo">
+    </div>
     <nav>
       <a href="index.html">Home</a>
-      <a href="scam1.html">Scam Type 1</a>
-      <a href="scam2.html">Scam Type 2</a>
-      <a href="scam3.html">Scam Type 3</a>
-      <a href="thoughts.html">Thoughts</a>
+      <a href="scam1.html">Impersonation Scam</a>
+      <a href="scam2.html">Love Scam</a>
+      <a href="scam3.html">Investment Scam</a>
+      <a href="thoughts.html">Our Thoughts</a>
       <a href="enquiry.html">Enquiry</a>
     </nav>
+    <div class="header-title">Scam Awareness Singapore</div>
   </header>
 
   <main class="container">
@@ -160,11 +199,10 @@
           alert("Thank you for your enquiry.");
       }
 
-    
       window.location.href = "success.html";
       return false;
     }
   </script>
-  <script src="script.js"></script>
 </body>
 </html>
+

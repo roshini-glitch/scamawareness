@@ -164,7 +164,7 @@ body {
 
 h1 {
   text-align: center;
-  color: #e63946;
+  color: #394de6;
 }
 
 button {
@@ -205,7 +205,125 @@ button:hover {
       height: auto;
       display: block;
     }
-  
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
+      color: #000000;
+    }
+
+    /* Updated header styles to match the image */
+    header {
+      background-color: #66aaff; /* Light blue */
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 10px 30px;
+    }
+
+    .logo-box {
+      background-color: #29b6f6; /* Bright blue background for the logo box */
+      padding: 10px;
+      margin-right: 20px;
+    }
+
+    .logo-box img {
+      width: 80px;
+      height: 80px;
+      display: block;
+    }
+
+    nav {
+      flex-grow: 1;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .header-title {
+      color: black;
+      font-weight: bold;
+      font-size: 18px;
+      text-align: right;
+    }
+
+    main.container {
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background-color: #f8f8f8;
+    }
+
+    h1 {
+      text-align: center;
+      color: #3b30d2;
+    }
+
+    form label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    form input[type="text"],
+    form input[type="email"],
+    form select,
+    form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #999;
+      border-radius: 5px;
+    }
+
+    form input[type="radio"] {
+      margin-top: 10px;
+      margin-right: 5px;
+    }
+
+    form textarea {
+      resize: vertical;
+      height: 100px;
+    }
+
+    form input[type="submit"] {
+      margin-top: 20px;
+      padding: 12px 25px;
+      background-color: #cb2222;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    form input[type="submit"]:hover {
+      background-color: #a00000;
+    }
+
+    footer {
+      background-color: #000000;
+      color: #ffffff;
+      padding: 1em 0;
+      text-align: center;
+    }
+ 
+ 
   
 
-    
+  
