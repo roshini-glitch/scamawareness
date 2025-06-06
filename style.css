@@ -1,54 +1,83 @@
-/* style.css */
+  /* General Reset and Body */
 * {
   box-sizing: border-box;
 }
 
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+html, body {
   margin: 0;
-  background-color: #ffffff;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
   color: #000000;
   line-height: 1.6;
 }
 
+/* Header Section */
 header {
-  background-color: hsl(214, 87%, 68%);
-  padding: 15px 30px;
-  color: #000000;
+  background-color: #66aaff;
+  color: white;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  font-weight: 600;
-  font-size: 1.25rem;
-  letter-spacing: 1px;
+  padding: 15px 20px;
+}
+
+/* Logo Section */
+.logo-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.logo {
+  width: 100%;
+  max-width: 100px;
+  height: auto;
+  display: block;
+}
+
+.site-title {
+  font-size: 20px;
+  margin-top: 8px;
+  color: black;
+  text-align: center;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  padding: 10px 0;
 }
 
 nav a {
-  color: #fff;
+  color: white;
   text-decoration: none;
-  margin-left: 20px;
-  font-weight: 600;
+  font-weight: bold;
+  font-size: 1rem;
   transition: color 0.3s ease;
 }
 
 nav a:hover {
+  text-decoration: underline;
   color: #21237a;
 }
 
+/* Main Content */
 .container {
   max-width: 900px;
   margin: 40px auto;
   padding: 0 20px;
 }
 
-h1, h2 {
-  color: #000000;
-  margin-bottom: 10px;
-}
-
-h3 {
-  color: #222;
-  margin-bottom: 5px;
+h1 {
+  text-align: center;
+  color: #394de6;
+  margin-bottom: 20px;
 }
 
 p {
@@ -56,274 +85,31 @@ p {
   font-size: 1.1rem;
 }
 
-ul {
-  margin-left: 20px;
-  margin-bottom: 15px;
-}
-
+/* Footer */
 footer {
-  background-color: #111;
-  color: #ccc;
-  text-align: center;
+  background-color: #000000;
+  color: #ffffff;
   padding: 15px 20px;
-  font-size: 0.9rem;
-  margin-top: 40px;
-}
-
-button, input[type="submit"] {
-  background-color: #e63946;
-  border: none;
-  padding: 12px 25px;
-  color: white;
-  font-size: 1rem;
-  cursor: pointer;
-  border-radius: 3px;
-  transition: background-color 0.3s ease;
-}
-
-button:hover, input[type="submit"]:hover {
-  background-color: #b22a36;
-}
-
-form label {
-  display: block;
-  margin-bottom: 6px;
-  font-weight: 600;
-}
-
-form input[type="text"],
-form input[type="email"],
-form select,
-form textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 18px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 1rem;
-}
-
-textarea {
-  resize: vertical;
-  min-height: 100px;
-}
-
-input[type="radio"] {
-  margin-right: 6px;
-}
-
-.error {
-  color: red;
-  font-weight: 600;
-  margin-bottom: 15px;
-}
-
-@media (max-width: 600px) {
-  header {
-    flex-direction: column;
-    text-align: center;
-  }
-  nav a {
-    margin: 10px 10px 0 10px;
-  }
-}
-.logo {
-  height: 100px;   /* smaller height */
-  width: 100px;    /* keeps the original aspect ratio */
-}
-nav {
-  margin-left: 200px; /* Pushes the menu to the right */
-}
-logo-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* or left-align with `flex-start` */
-}
-
-
-.site-title {
-  font-size: 16px;
-  margin-top: 5px;
-  color: black;
-  font-family: Arial, sans-serif; /* or your preferred font */
-}
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f8f9fa;
-  padding: 20px;
-}
-
-.quiz-container {
-  max-width: 600px;
-  margin: auto;
-  background: white;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-h1 {
   text-align: center;
-  color: #394de6;
+  font-size: 0.9rem;
 }
 
-button {
-  display: block;
-  margin: 20px auto;
-  padding: 10px 25px;
-  background-color: #e63946;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
+/* Responsive Design */
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .logo-section {
+    flex-direction: column;
+  }
+
+  .site-title {
+    font-size: 18px;
+  }
+
+  .container {
+    padding: 0 10px;
+  }
 }
-
-button:hover {
-  background-color: #d62828;
-}
-
-    .container {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      max-width: 800px;
-      margin: 20px auto;
-    }
-
-    .text {
-      flex: 1;
-      font-size: 18px;
-      padding-right: 20px;
-    }
-
-    .image {
-      flex-shrink: 0;
-    }
-
-    .image img {
-      max-width: 200px;
-      height: auto;
-      display: block;
-    }
-  
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f9f9f9;
-      color: #000000;
-    }
-
-    /* Updated header styles to match the image */
-    header {
-      background-color: #66aaff; /* Light blue */
-      color: white;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      padding: 10px 30px;
-    }
-
-    .logo-box {
-      background-color: #29b6f6; /* Bright blue background for the logo box */
-      padding: 10px;
-      margin-right: 20px;
-    }
-
-    .logo-box img {
-      width: 80px;
-      height: 80px;
-      display: block;
-    }
-
-    nav {
-      flex-grow: 1;
-      text-align: center;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 20px;
-      font-weight: bold;
-      font-size: 20px;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    .header-title {
-      color: black;
-      font-weight: bold;
-      font-size: 18px;
-      text-align: right;
-    }
-
-    main.container {
-      max-width: 800px;
-      margin: 30px auto;
-      padding: 20px;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      background-color: #f8f8f8;
-    }
-
-    h1 {
-      text-align: center;
-      color: #3b30d2;
-    }
-
-    form label {
-      display: block;
-      margin-top: 15px;
-      font-weight: bold;
-    }
-
-    form input[type="text"],
-    form input[type="email"],
-    form select,
-    form textarea {
-      width: 100%;
-      padding: 10px;
-      margin-top: 5px;
-      border: 1px solid #999;
-      border-radius: 5px;
-    }
-
-    form input[type="radio"] {
-      margin-top: 10px;
-      margin-right: 5px;
-    }
-
-    form textarea {
-      resize: vertical;
-      height: 100px;
-    }
-
-    form input[type="submit"] {
-      margin-top: 20px;
-      padding: 12px 25px;
-      background-color: #cb2222;
-      color: #fff;
-      border: none;
-      border-radius: 5px;
-      font-size: 16px;
-      cursor: pointer;
-    }
-
-    form input[type="submit"]:hover {
-      background-color: #a00000;
-    }
-
-    footer {
-      background-color: #000000;
-      color: #ffffff;
-      padding: 1em 0;
-      text-align: center;
-    }
- 
- 
-  
-
-  
