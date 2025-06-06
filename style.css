@@ -181,7 +181,7 @@ button {
 button:hover {
   background-color: #d62828;
 }
-<style>
+
     .container {
       display: flex;
       align-items: center;
@@ -205,7 +205,7 @@ button:hover {
       height: auto;
       display: block;
     }
-  <style>
+  
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
