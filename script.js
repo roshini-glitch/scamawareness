@@ -1,6 +1,7 @@
 function validateForm() {
   // Get values from the form
   const email = document.getElementById("email").value.trim();
+  const phone = document.getElementById("phone").value.trim();
   const scamType = document.getElementById("scamType").value;
   const contactMethod = document.querySelector('input[name="contactMethod"]:checked');
   const message = document.getElementById("message").value.trim();
