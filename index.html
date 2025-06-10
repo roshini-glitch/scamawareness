@@ -5,9 +5,99 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>ScamAwarenessSG Website</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+   
+
+    nav a {
+      color: white;
+      margin-left: 1rem;
+      text-decoration: none;
+    }
+
+    .intro-hero {
+      background: linear-gradient(135deg, #3c80f5, #478ae8);
+      color: white;
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+
+    .intro-hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .intro-hero p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .container {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .scam-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .scam-box {
+      background: white;
+      border-left: 5px solid #e74c3c;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      transition: transform 0.2s ease;
+      text-decoration: none;
+      color: #333;
+    }
+
+    .scam-box:hover {
+      transform: translateY(-4px);
+    }
+
+    .scam-box h3 {
+      margin-bottom: 0.5rem;
+      color: #e74c3c;
+    }
+
+    .redirect-box {
+      margin-top: 3rem;
+      text-align: center;
+    }
+
+    .redirect-box a {
+      display: inline-block;
+      margin: 1rem;
+      background: #00b894;
+      color: white;
+      padding: 1rem 2rem;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .redirect-box a:hover {
+      background: #019875;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #dfe6e9;
+      margin-top: 3rem;
+    }
+  </style>
 </head>
 <body>
+
   <header>
+    <div>Scam Awareness SG</div>
     <nav>
       <a href="index.html">Home</a>
       <a href="scam1.html">Impersonation Scam</a>
@@ -17,14 +107,9 @@
       <a href="enquiry.html">Enquiry</a>
     </nav>
   </header>
-  <header>
-    <img src="SCAM AWARENESS.png" alt="Website Logo" class="logo" />
-    <h1 class="site-title">Scam Awareness Singapore</h1>
-  </header>  
-
 
   <main class="container">
-    <h1>Introduction to Cyber Scams in Singapore</h1>
+    <h2>Introduction to Cyber Scams in Singapore</h2>
     <p>
       Cyber scams have surged sharply in Singapore, causing devastating financial losses. 
       In recent years, millions of dollars have been lost to phone scams and cyber fraud, 
@@ -36,13 +121,41 @@
     </p>
     <p>
       Both the uneducated and even educated professionals fall prey to these deceptive tactics. 
-      The Singapore Police and <a href="https://www.scamalert.sg/" target="_blank" style="color:#e63946;">scamalert.sg</a> 
+      The Singapore Police and 
+      <a href="https://www.scamalert.sg/" target="_blank" style="color:#e63946;">scamalert.sg</a> 
       provide useful resources and tips on scam prevention.
     </p>
+
+    <!-- Scam Grid Section -->
+    <section>
+      <h2 style="margin-top: 3rem;">Want to know more about other scams?</h2>
+      <div class="scam-grid">
+        <a href="scam1.html" class="scam-box">
+          <h3>Impersonation Scam</h3>
+          <p>Learn how scammers pose as officials or friends to trick victims.</p>
+        </a>
+        <a href="scam2.html" class="scam-box">
+          <h3>Love Scam</h3>
+          <p>Understand how emotional manipulation leads to financial loss.</p>
+        </a>
+        <a href="scam3.html" class="scam-box">
+          <h3>Investment Scam</h3>
+          <p>See how fake investments deceive victims with false promises.</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- Redirect Links -->
+    <div class="redirect-box">
+      <a href="thoughts.html">Read Our Thoughts</a>
+      <a href="enquiry.html">Submit an Enquiry</a>
+    </div>
   </main>
 
   <footer>
-    &copy; 2025 Scam Awareness SG | Source: <a href="https://www.scamalert.sg/" target="_blank" style="color:#e63946;">scamalert.sg</a>
+    &copy; 2025 Scam Awareness SG | Source: 
+    <a href="https://www.scamalert.sg/" target="_blank" style="color:#e63946;">scamalert.sg</a>
   </footer>
+
 </body>
 </html>
