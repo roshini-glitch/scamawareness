@@ -5,6 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Love Scam - Scam Awareness SG</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .content-boxes {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 32px;
+    }
+
+    .box {
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+      flex: 1 1 260px;
+      max-width: 300px;
+      transition: transform 0.2s;
+    }
+
+    .box:hover {
+      transform: translateY(-5px);
+    }
+
+    .box h3 {
+      margin-top: 0;
+      color: #b22234;
+    }
+
+    .box p {
+      color: #333;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -40,6 +72,23 @@
     <p>
       A woman lost over $100,000 to a scammer she met on social media who claimed to be a businessman stranded overseas. Always stay alert.
     </p>
+
+    <!-- Content Boxes Start -->
+    <div class="content-boxes">
+      <div class="box">
+        <h3>Warning Signs</h3>
+        <p>They avoid video calls, rush the relationship, or ask for money for emergencies.</p>
+      </div>
+      <div class="box">
+        <h3>What To Do</h3>
+        <p>Pause and verify their story. Talk to friends or family before sending money.</p>
+      </div>
+      <div class="box">
+        <h3>Get Help</h3>
+        <p>If you suspect a scam, contact the authorities or visit <a href="https://www.scamalert.sg/" target="_blank">scamalert.sg</a>.</p>
+      </div>
+    </div>
+    <!-- Content Boxes End -->
   </main>
 
   <footer>
