@@ -3,8 +3,229 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Love Scam - Scam Awareness SG</title>
+  <title>Impersonation Scam - Scam Awareness SG</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="SCAM AWARENESS.png" type="image/png" />
+  <style>
+    .scam-header {
+      background: linear-gradient(135deg, #3b82f6, #2563eb);
+      color: white;
+      padding: 2rem;
+      border-radius: 10px;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    .scam-header h1 {
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+      color: white;
+    }
+
+    .scam-header p {
+      font-size: 1.1rem;
+      opacity: 0.95;
+      line-height: 1.6;
+    }
+
+    .red-flag {
+      background: #dbeafe;
+      border: 1px solid #93c5fd;
+      padding: 1.2rem;
+      border-radius: 8px;
+      margin: 2rem 0;
+      border-left: 4px solid #3b82f6;
+    }
+
+    .red-flag strong {
+      color: #1d4ed8;
+      font-weight: 700;
+    }
+
+    .tactics-section {
+      margin: 2.5rem 0;
+    }
+
+    .tactics-section h2 {
+      color: #2d3436;
+      margin-bottom: 1.5rem;
+      font-size: 1.8rem;
+    }
+
+    .tactics-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin: 1.5rem 0;
+    }
+
+    .tactic-card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      border-left: 4px solid #2563eb;
+      transition: transform 0.3s ease;
+    }
+
+    .tactic-card:hover {
+      transform: translateY(-2px);
+    }
+
+    .tactic-card h3 {
+      color: #2563eb;
+      margin-bottom: 0.8rem;
+      font-size: 1.2rem;
+    }
+
+    .tactic-card p {
+      color: #555;
+      line-height: 1.5;
+    }
+
+    .protection-section {
+      background: #f0fdf4;
+      padding: 2rem;
+      border-radius: 10px;
+      margin: 2.5rem 0;
+    }
+
+    .protection-section h2 {
+      color: #cf0f0f;
+      margin-bottom: 1.5rem;
+      text-align: center;
+      font-size: 1.8rem;
+    }
+
+    .defense-tips {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      gap: 1.2rem;
+      margin: 1.5rem 0;
+    }
+
+    .tip-card {
+      background: white;
+      padding: 1.2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.3s ease;
+      border: 1px solid #e5e7eb;
+    }
+
+    .tip-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(59, 130, 246, 0.15);
+    }
+
+    .tip-icon {
+      font-size: 2.2rem;
+      margin-bottom: 0.8rem;
+      display: block;
+    }
+
+    .tip-card h4 {
+      color: #16a34a;
+      margin-bottom: 0.5rem;
+      font-size: 1.1rem;
+    }
+
+    .tip-card p {
+      color: #666;
+      font-size: 0.95rem;
+      line-height: 1.4;
+    }
+
+    .real-example {
+      background: #fef2f2;
+      padding: 1.8rem;
+      border-radius: 10px;
+      margin: 2.5rem 0;
+      border-left: 4px solid #dc2626;
+    }
+
+    .real-example h3 {
+      color: #dc2626;
+      margin-bottom: 1rem;
+      font-size: 1.3rem;
+    }
+
+    .got-scammed {
+      background: linear-gradient(135deg, #059669, #047857);
+      color: white;
+      padding: 2rem;
+      border-radius: 10px;
+      text-align: center;
+      margin: 2.5rem 0;
+    }
+
+    .got-scammed h2 {
+      margin-bottom: 1rem;
+      color: white;
+      font-size: 1.6rem;
+    }
+
+    .got-scammed p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    .info-section {
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      margin: 2rem 0;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+      border: 1px solid #e1e8ed;
+    }
+
+    .info-section h2 {
+      color: #2d3436;
+      margin-bottom: 1.5rem;
+      border-bottom: 3px solid #3b82f6;
+      padding-bottom: 0.5rem;
+      font-size: 1.6rem;
+    }
+
+    .info-section ul {
+      margin: 1rem 0;
+      padding-left: 1.8rem;
+    }
+
+    .info-section li {
+      margin-bottom: 0.8rem;
+      line-height: 1.5;
+      color: #555;
+    }
+
+    @media (max-width: 768px) {
+      .scam-header h1 {
+        font-size: 1.8rem;
+      }
+      
+      .tactics-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .defense-tips {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+      }
+      
+      .tip-icon {
+        font-size: 1.8rem;
+      }
+    }
+
+    @media (max-width: 992px) and (min-width: 769px) {
+      .defense-tips {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+      }
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -20,30 +241,126 @@
   </header>
 
   <main class="container">
-    <h1>Love Scam Joyce</h1>
-    <p>
-      Love scams target victims by building fake romantic relationships online, gaining trust and eventually requesting money.
-    </p>
-    <h2>How It Works</h2>
-    <ul>
-      <li>Scammers create fake profiles on dating sites or social media.</li>
-      <li>They groom victims by sharing personal stories and love messages.</li>
-      <li>Once trust is established, they ask for money citing emergencies or travel costs.</li>
-    </ul>
-    <h2>How to Avoid</h2>
-    <ul>
-      <li>Be cautious of people who avoid meeting in person or video calls.</li>
-      <li>Never send money or personal details to someone you haven't met.</li>
-      <li>Verify suspicious stories independently.</li>
-    </ul>
-    <h3>Real Story:</h3>
-    <p>
-      A woman lost over $100,000 to a scammer she met on social media who claimed to be a businessman stranded overseas. Always stay alert.
-    </p>
+    <div class="scam-header">
+      <h1>💔 What's an Love Scam?</h1>
+      <p>Love scams target victims by building fake romantic relationships online, gaining trust and eventually requesting money. These scammers usually use dating apps, social media, or gaming platforms to gain your trust.</p>
+    </div>
+
+    <div class="red-flag">
+      <strong>Red Flag:</strong> They do not want your heart, they want your wallet.
+    </div>
+
+    <div class="tactics-section">
+      <h2>How Love Scammers Operate</h2>
+      <div class="tactics-grid">
+        <div class="tactic-card">
+          <h3>They build trust</h3>
+          <p>Daily sweet messages, calls, or even video chats to make you believe it's real.</p>
+        </div>
+        <div class="tactic-card">
+          <h3>They create emotional connection</h3>
+          <p>They quickly express deep love and future plans, often too soon.</p>
+        </div>
+        <div class="tactic-card">
+          <h3>Requests</h3>
+          <p>After fooling you to trust them blindly, they request money for a “family emergency,” “hospital bills,” “flight tickets,” or “investment opportunity.”
+
+</p>
+        </div>
+        <div class="tactic-card">
+          <h3>Excuses and Delays</h3>
+          <p>Whenever you ask to meet in person, they will always have an excuse.
+
+</p>
+        </div>
+      </div>
+    </div>
+     <div class="info-section">
+      <h2>Red Flags to Watch For</h2>
+      <ul>
+        <li>They say they "love you" over the phone quickly, often within days or weeks.</li>
+        <li>They avoid face to face meetings, even if they claim to be in Singapore.</li>
+        <li>They often claim to be overseas, working in the military, oil rigs, or foreign business.</li>
+        <li>They try to isolate you from friends or family who raise concerns.</li>
+        <li>They ask for money, sometimes repeatedly, for emergencies, debts, or travel.</li>
+      </ul>
+    </div>
+    <div class="protection-section">
+      <h2>🛡️ How to Protect Yourself</h2>
+      
+      <h3 style="margin-bottom: 1rem; color: #2d3436; text-align: center;">Quick Defense Tips</h3>
+      <div class="defense-tips">
+        <div class="tip-card">
+          <span class="tip-icon">❌</span>
+          <h4>Never send money</h4>
+          <p>to someone you’ve never met in real life</p>
+        </div>
+        <div class="tip-card">
+          <span class="tip-icon">📷</span>
+          <h4>Reverse image search</h4>
+          <p>their photos, they may be stolen from someone else</p>
+        </div>
+        <div class="tip-card">
+          <span class="tip-icon">👀</span>
+          <h4>Be skeptical</h4>
+          <p>of grand promises of love or marriage too quickly</p>
+        </div>
+        <div class="tip-card">
+          <span class="tip-icon">🧠</span>
+          <h4>Trust your gut</h4>
+          <p>if something feels off, it probably is</p>
+        </div>
+        <div class="tip-card">
+          <span class="tip-icon">🗣️</span>
+          <h4>Talk to someone you trust</h4>
+          <p>if you're unsure about an online relationship</p>
+        </div>
+        <div class="tip-card">
+          <span class="tip-icon">🔍</span>
+          <h4>Verify their identity</h4>
+          <p>ask detailed questions, and don’t accept vague answers</p>
+        </div>
+      </div>
+    </div>
+
+    <div style="display: flex; gap: 2rem; align-items: flex-start; margin: 2.5rem 0;">
+      <div style="flex: 1 1 340px; max-width: 380px;">
+      <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@dbssg/video/7402150101298318593" data-video-id="7402150101298318593" style="max-width: 340px; min-width: 280px; margin: 0;">
+        <section>
+        <a target="_blank" title="@dbssg" href="https://www.tiktok.com/@dbssg?refer=embed">@dbssg</a>
+        <p>Love scams aren&#39;t just about romantic relationships.   Learn how Becky got scammed out of $500,000 and the red flags to watch out for. Stay safe and stay alert!</p>
+        <a target="_blank" title="♬ Refreshing-Morning-News-Programs-Medical-Education(951832) - ImoKenpi-Dou" href="https://www.tiktok.com/music/Refreshing-Morning-News-Programs-Medical-Education-951832-6925906073085806594?refer=embed"></a>
+        </section>
+      </blockquote>
+      <script async src="https://www.tiktok.com/embed.js"></script>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 1.2rem; flex: 1 1 280px; min-width: 220px;">
+      <div style="background: #fef2f2; border-left: 5px solid #dc2626; border-radius: 10px; padding: 1.5rem; color: #b91c1c;">
+        <strong style="font-size: 1.1rem;">Real Example 1: Mei’s Story:</strong>
+        <p style="margin-top: 0.7rem;">Mei met "James" on a dating app. He claimed to be a foreign businessman working in Dubai. After weeks of romance, he asked her to send $8,000 for a "business emergency." She sent the money—and never heard from him again.</p>
+      </div>
+      <div style="background: #fef2f2; border-left: 5px solid #dc2626; border-radius: 10px; padding: 1.5rem; color: #b91c1c;">
+        <strong style="font-size: 1.1rem;">Real Example 2: Amir’s Experience:</strong>
+        <p style="margin-top: 0.7rem;">Amir started chatting with someone on Instagram. She shared photos, voice notes, and promised to visit Singapore. Then she asked for money for her "plane ticket." He sent $3,000. The account disappeared the next day.</p>
+            </div>
+            <img src="images/lovescam1.webp" alt="Love Scam Warning" style="width:100%; border-radius:10px; margin-top:1.2rem; object-fit:cover; max-height:180px; box-shadow:0 2px 8px rgba(220,38,38,0.08);" />
+      </div>
+      </div>
+    </div>
+  
+    <div class="got-scammed">
+      <h2>Got Scammed?</h2>
+      <p>
+      Report the scam immediately through the <strong>ScamShield app</strong>.<br>
+      Or contact the Police Hotline at <strong>1800-255-0000</strong>.<br>
+      Call the Anti-Scam Centre at <strong>1800-722-6688</strong>.<br>
+      Don’t stay silent! Many victims recover faster by speaking up.
+      </p>
+    </div>
   </main>
 
   <footer>
-    &copy; 2025 Scam Awareness SG | Source: <a href="https://www.scamalert.sg/" target="_blank" style="color:#e63946;">scamalert.sg</a>
+    &copy; 2025 Scam Awareness SG | Source: <a href="https://www.scamalert.sg/" target="_blank" style="color:#2563eb;">scamalert.sg</a>
   </footer>
 </body>
 </html>

@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Impersonation Scam - Scam Awareness SG</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="SCAM AWARENESS.png" type="image/png" />
   <style>
-    /* Additional styles for enhanced impersonation scam page */
     .scam-header {
-      background: linear-gradient(135deg, #ff6b6b, #ee5a52);
+      background: linear-gradient(135deg, #3b82f6, #2563eb);
       color: white;
       padding: 2rem;
       border-radius: 10px;
@@ -29,16 +29,16 @@
     }
 
     .red-flag {
-      background: #fff3cd;
-      border: 1px solid #ffeaa7;
+      background: #dbeafe;
+      border: 1px solid #93c5fd;
       padding: 1.2rem;
       border-radius: 8px;
       margin: 2rem 0;
-      border-left: 4px solid #fdcb6e;
+      border-left: 4px solid #3b82f6;
     }
 
     .red-flag strong {
-      color: #e17055;
+      color: #1d4ed8;
       font-weight: 700;
     }
 
@@ -64,7 +64,7 @@
       padding: 1.5rem;
       border-radius: 10px;
       box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-      border-left: 4px solid #e74c3c;
+      border-left: 4px solid #2563eb;
       transition: transform 0.3s ease;
     }
 
@@ -73,7 +73,7 @@
     }
 
     .tactic-card h3 {
-      color: #e74c3c;
+      color: #2563eb;
       margin-bottom: 0.8rem;
       font-size: 1.2rem;
     }
@@ -84,14 +84,14 @@
     }
 
     .protection-section {
-      background: #e8f5e8;
+      background: #f0fdf4;
       padding: 2rem;
       border-radius: 10px;
       margin: 2.5rem 0;
     }
 
     .protection-section h2 {
-      color: #27ae60;
+      color: #16a34a;
       margin-bottom: 1.5rem;
       text-align: center;
       font-size: 1.8rem;
@@ -99,7 +99,8 @@
 
     .defense-tips {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
       gap: 1.2rem;
       margin: 1.5rem 0;
     }
@@ -111,10 +112,12 @@
       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
       text-align: center;
       transition: transform 0.3s ease;
+      border: 1px solid #e5e7eb;
     }
 
     .tip-card:hover {
       transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(59, 130, 246, 0.15);
     }
 
     .tip-icon {
@@ -124,7 +127,7 @@
     }
 
     .tip-card h4 {
-      color: #27ae60;
+      color: #16a34a;
       margin-bottom: 0.5rem;
       font-size: 1.1rem;
     }
@@ -136,21 +139,21 @@
     }
 
     .real-example {
-      background: #fde2e2;
+      background: #fef2f2;
       padding: 1.8rem;
       border-radius: 10px;
       margin: 2.5rem 0;
-      border-left: 4px solid #e74c3c;
+      border-left: 4px solid #dc2626;
     }
 
     .real-example h3 {
-      color: #c53030;
+      color: #dc2626;
       margin-bottom: 1rem;
       font-size: 1.3rem;
     }
 
     .got-scammed {
-      background: linear-gradient(135deg, #00b894, #00a085);
+      background: linear-gradient(135deg, #059669, #047857);
       color: white;
       padding: 2rem;
       border-radius: 10px;
@@ -181,7 +184,7 @@
     .info-section h2 {
       color: #2d3436;
       margin-bottom: 1.5rem;
-      border-bottom: 3px solid #74b9ff;
+      border-bottom: 3px solid #3b82f6;
       padding-bottom: 0.5rem;
       font-size: 1.6rem;
     }
@@ -202,12 +205,24 @@
         font-size: 1.8rem;
       }
       
-      .tactics-grid, .defense-tips {
+      .tactics-grid {
         grid-template-columns: 1fr;
+      }
+      
+      .defense-tips {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
       }
       
       .tip-icon {
         font-size: 1.8rem;
+      }
+    }
+
+    @media (max-width: 992px) and (min-width: 769px) {
+      .defense-tips {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
       }
     }
   </style>
@@ -236,7 +251,7 @@
     </div>
 
     <div class="tactics-section">
-      <h2>😈 Common Scammer Tactics</h2>
+      <h2>Common Scammer Tactics</h2>
       <div class="tactics-grid">
         <div class="tactic-card">
           <h3>Fake Police Call</h3>
@@ -282,6 +297,16 @@
           <h4>No Money Transfers</h4>
           <p>Real authorities never ask you to transfer money.</p>
         </div>
+        <div class="tip-card">
+          <span class="tip-icon">🔍</span>
+          <h4>Verify Identity</h4>
+          <p>Ask for their name, badge number, and department details.</p>
+        </div>
+        <div class="tip-card">
+          <span class="tip-icon">👥</span>
+          <h4>Ask Someone</h4>
+          <p>Consult a trusted friend or family member before acting.</p>
+        </div>
       </div>
     </div>
 
@@ -294,6 +319,41 @@
         <li>They're asked to transfer money or provide banking details and passwords</li>
         <li>Scammers may use spoofed numbers to appear legitimate</li>
       </ul>
+      <div style="display: flex; justify-content: center; margin: 2rem 0;">
+        <img 
+          src="images/impersonscam1.jpeg" 
+          alt="Scam Picture Impersonation" 
+          width="420" 
+          height="280"
+          class="scam-img-appear"
+          style="border-radius: 16px; box-shadow: 0 6px 32px rgba(59,130,246,0.15); border: 4px solid #dbeafe; object-fit: cover;"
+        />
+      </div>
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          const img = document.querySelector('.scam-img-appear');
+          function onScroll() {
+            const rect = img.getBoundingClientRect();
+            if (rect.top < window.innerHeight - 80) {
+              img.classList.add('scam-img-visible');
+              window.removeEventListener('scroll', onScroll);
+            }
+          }
+          window.addEventListener('scroll', onScroll);
+          onScroll();
+        });
+      </script>
+      <style>
+        .scam-img-appear {
+          opacity: 0;
+          transform: translateY(40px) scale(0.96);
+          transition: opacity 0.7s cubic-bezier(.4,1.4,.6,1), transform 0.7s cubic-bezier(.4,1.4,.6,1);
+        }
+        .scam-img-visible {
+          opacity: 1;
+          transform: translateY(0) scale(1);
+        }
+      </style>
     </div>
 
     <div class="info-section">
@@ -309,18 +369,23 @@
     </div>
 
     <div class="real-example">
-      <h3>✅ Real Example</h3>
+      <h3>Real Example 1</h3>
       <p>Sarah got a call from "police" saying her account was linked to money laundering. Scared, she transferred $10,000 to a "secure account" for investigation. It was all fake. Don't be Sarah.</p>
     </div>
 
+    <div class="real-example">
+      <h3>Real Example 2</h3>
+      <p>Michael received a call from someone claiming to be from his bank, saying his account was compromised. They asked for his PIN and OTP to "secure" his account. He shared the details and lost $5,000 within hours. Always verify independently!</p>
+    </div>
+
     <div class="got-scammed">
-      <h2>🚨 Got Scammed?</h2>
+      <h2>Got Scammed?</h2>
       <p>Report it immediately through ScamShield app or contact police. The faster you act, the better chance of getting help.</p>
     </div>
   </main>
 
   <footer>
-    &copy; 2025 Scam Awareness SG | Source: <a href="https://www.scamalert.sg/" target="_blank" style="color:#e63946;">scamalert.sg</a>
+    &copy; 2025 Scam Awareness SG | Source: <a href="https://www.scamalert.sg/" target="_blank" style="color:#2563eb;">scamalert.sg</a>
   </footer>
 </body>
 </html>

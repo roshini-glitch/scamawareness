@@ -6,30 +6,6 @@
   <title>Scam Awareness - Enquiry</title>
   <link rel="stylesheet" href="style.css" />
   <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #721111;
-      color: #000000;
-    }
-
-    header, footer {
-      background-color: #000000;
-      color: #ffffff;
-      padding: 1em 0;
-      text-align: center;
-    }
-
-    nav a {
-      color: #ff0000;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
 
     main.container {
       max-width: 800px;
@@ -42,7 +18,7 @@
 
     h1 {
       text-align: center;
-      color: #cc0000;
+      color: #000000;
     }
 
     form label {
@@ -91,13 +67,13 @@
 <body>
 
   <header>
-    <h2>Scam Awareness Singapore</h2>
+    <div>Scam Awareness SG</div>
     <nav>
       <a href="index.html">Home</a>
-      <a href="scam1.html">Scam Type 1</a>
-      <a href="scam2.html">Scam Type 2</a>
-      <a href="scam3.html">Scam Type 3</a>
-      <a href="thoughts.html">Thoughts</a>
+      <a href="scam1.html">Impersonation Scam</a>
+      <a href="scam2.html">Love Scam</a>
+      <a href="scam3.html">Investment Scam</a>
+      <a href="thoughts.html">Our Thoughts</a>
       <a href="enquiry.html">Enquiry</a>
     </nav>
   </header>
@@ -105,10 +81,15 @@
   <main class="container">
     <h1>Enquiry Form</h1>
     <form name="enquiryForm" onsubmit="return validateForm()">
-      <label for="email">Email *</label>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Your Name" />
+
+      <label for="phone">Phone Number</label>
+      <input type="text" id="phone" name="phone" placeholder="e.g. 91234567" />
+      <label for="email">Email</label>
       <input type="email" id="email" name="email" placeholder="example@mail.com" />
 
-      <label for="scamType">Select Scam Type *</label>
+      <label for="scamType">Select Scam Type </label>
       <select id="scamType" name="scamType">
         <option value="">-- Please choose --</option>
         <option value="impersonation">Impersonation Scam</option>
@@ -116,13 +97,13 @@
         <option value="investment">Investment Scam</option>
       </select>
 
-      <label>Preferred Contact Method *</label>
+      <label>Preferred Contact Method </label>
       <input type="radio" id="contactEmail" name="contactMethod" value="email" checked />
       <label for="contactEmail" style="display:inline;">Email</label>
       <input type="radio" id="contactPhone" name="contactMethod" value="phone" />
       <label for="contactPhone" style="display:inline;">Phone</label>
 
-      <label for="message">Your Message *</label>
+      <label for="message">Your Message </label>
       <textarea id="message" name="message" placeholder="Write your enquiry here..."></textarea>
 
       <input type="submit" value="Submit Enquiry" />

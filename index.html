@@ -5,9 +5,100 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Introduction to Cyber Scams - Scam Awareness SG</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="SCAM AWARENESS.png" type="image/png" />
+  <style>
+    header {
+      margin-bottom: 0;
+    }
+
+    .banner-container {
+      position: relative;
+      width: 100%;
+      margin: 0 auto;
+      overflow: hidden;
+      cursor: pointer;
+    }
+
+    .banner {
+      width: 100%;
+      display: block;
+      max-height: 350px;
+      object-fit: cover;
+      margin: 0;
+      transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
+    .banner-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, rgba(128, 128, 128, 0.1) 0%, rgba(169, 169, 169, 0.15) 100%);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      pointer-events: none;
+    }
+
+    .banner-container:hover .banner {
+      transform: scale(1.02);
+      filter: brightness(1.1) contrast(1.05);
+    }
+
+    .banner-container:hover .banner-overlay {
+      opacity: 1;
+    }
+
+    .info-section {
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      margin: 2rem 0;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+      border: 1px solid #e1e8ed;
+    }
+
+    .info-section h2 {
+      color: #2d3436;
+      margin-bottom: 1.5rem;
+      border-bottom: 3px solid #3b82f6;
+      padding-bottom: 0.5rem;
+      font-size: 1.6rem;
+    }
+
+    .info-section ul {
+      margin: 1rem 0;
+      padding-left: 1.8rem;
+    }
+
+    .info-section li {
+      margin-bottom: 0.8rem;
+      line-height: 1.5;
+      color: #555;
+    }
+
+    footer {
+      background-color: #5e9df3;
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+      margin-top: 2rem;
+    }
+
+    footer a {
+      color: #dbeafe;
+      text-decoration: none;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+  </style>
 </head>
 <body>
-  <header>
+ <header>
     <div>Scam Awareness SG</div>
     <nav>
       <a href="index.html">Home</a>
@@ -19,26 +110,48 @@
     </nav>
   </header>
 
+  <div class="banner-container">
+    <img src="images/indexbanner.png" alt="Banner" class="banner" />
+    <div class="banner-overlay"></div>
+  </div>
+
   <main class="container">
-    <h1>Introduction to Cyber Scams in Singapore</h1>
-    <p>
-      Cyber scams have surged sharply in Singapore, causing devastating financial losses. 
-      In recent years, millions of dollars have been lost to phone scams and cyber fraud, 
-      with some victims losing over $200,000.
-    </p>
-    <p>
-      Scammers use various strategies including impersonation and sophisticated love scams. 
-      It's important to understand these scams to protect yourself and your loved ones.
-    </p>
-    <p>
-      Both the uneducated and even educated professionals fall prey to these deceptive tactics. 
-      The Singapore Police and <a href="https://www.scamalert.sg/" target="_blank" style="color:#e63946;">scamalert.sg</a> 
-      provide useful resources and tips on scam prevention.
-    </p>
+    <h1 style="text-align: center; color: #2563eb; font-size: 2.2rem; margin-top: 2rem; margin-bottom: 1.5rem; font-weight: 700; letter-spacing: 1px;">
+      Introduction to Cyber Scams in Singapore
+    </h1>
+
+    <div class="info-section">
+      <h2>How Common is Getting Scammed in Singapore</h2>
+      <p>Scams are alarmingly common in Singapore. In 2023 alone, victims lost over S$47 million to scams. There were 1,152 reported cases, with many involving online platforms like dating apps and social media.</p>
+      <img src="images/indexgraph.png" alt="Scam Statistics" style="width:100%; max-width:830px; border-radius:8px; margin-top:1rem; box-shadow:0 2px 10px rgba(0,0,0,0.1);">
+    </div>
+
+    <div class="info-section">
+      <h2>How to Avoid Being Scammed</h2>
+      <ul>
+        <li>Never disclose personal information, bank details, or passwords over the phone.</li>
+        <li>Always verify caller identity independently by calling official numbers.</li>
+        <li>Be suspicious of urgent demands for money transfers or immediate action.</li>
+        <li>Remember that real authorities will never ask you to transfer money.</li>
+        <li>Take time to think – fake calls can wait.</li>
+        <li>If in doubt, hang up and clarify with respective officials.</li>
+      </ul>
+    </div>
+
+    <div class="info-section" style="text-align:center;">
+      <h2>Explore More About Scams</h2>
+      <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:1rem; margin-top:1.5rem;">
+        <a href="scam1.html" style="background:#3b82f6; color:#fff; padding:0.8rem 1.6rem; border-radius:6px; text-decoration:none; font-weight:600; transition:background 0.2s;">Impersonation Scam</a>
+        <a href="scam2.html" style="background:#3b82f6; color:#fff; padding:0.8rem 1.6rem; border-radius:6px; text-decoration:none; font-weight:600; transition:background 0.2s;">Love Scam</a>
+        <a href="scam3.html" style="background:#3b82f6; color:#fff; padding:0.8rem 1.6rem; border-radius:6px; text-decoration:none; font-weight:600; transition:background 0.2s;">Investment Scam</a>
+        <a href="thoughts.html" style="background:#3b82f6; color:#fff; padding:0.8rem 1.6rem; border-radius:6px; text-decoration:none; font-weight:600; transition:background 0.2s;">Our Thoughts</a>
+        <a href="enquiry.html" style="background:#3b82f6; color:#fff; padding:0.8rem 1.6rem; border-radius:6px; text-decoration:none; font-weight:600; transition:background 0.2s;">Enquiry</a>
+      </div>
+    </div>
   </main>
 
   <footer>
-    &copy; 2025 Scam Awareness SG | Source: <a href="https://www.scamalert.sg/" target="_blank" style="color:#e63946;">scamalert.sg</a>
+    &copy; 2025 Scam Awareness SG | Source: <a href="https://www.scamalert.sg/" target="_blank">scamalert.sg</a>
   </footer>
 </body>
 </html>
